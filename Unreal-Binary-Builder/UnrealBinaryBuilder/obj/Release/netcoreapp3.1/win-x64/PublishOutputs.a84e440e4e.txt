@@ -1,0 +1,3 @@
+D:\ValleyoftheAncient-Git\Unreal-Binary-Builder\Output\UnrealBinaryBuilder.pdb
+D:\ValleyoftheAncient-Git\Unreal-Binary-Builder\Output\UnrealBinaryBuilderUpdater.pdb
+D:\ValleyoftheAncient-Git\Unreal-Binary-Builder\Output\UnrealBinaryBuilder.exe

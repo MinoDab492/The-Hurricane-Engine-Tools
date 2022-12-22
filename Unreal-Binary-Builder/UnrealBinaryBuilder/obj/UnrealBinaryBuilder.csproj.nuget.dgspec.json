@@ -1,0 +1,190 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\ValleyoftheAncient-Git\\Unreal-Binary-Builder\\UnrealBinaryBuilder\\UnrealBinaryBuilder.csproj": {}
+  },
+  "projects": {
+    "D:\\ValleyoftheAncient-Git\\Unreal-Binary-Builder\\UnrealBinaryBuilderUpdater\\UnrealBinaryBuilderUpdater.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\ValleyoftheAncient-Git\\Unreal-Binary-Builder\\UnrealBinaryBuilderUpdater\\UnrealBinaryBuilderUpdater.csproj",
+        "projectName": "UnrealBinaryBuilderUpdater",
+        "projectPath": "D:\\ValleyoftheAncient-Git\\Unreal-Binary-Builder\\UnrealBinaryBuilderUpdater\\UnrealBinaryBuilderUpdater.csproj",
+        "packagesPath": "C:\\Users\\heath\\.nuget\\packages\\",
+        "outputPath": "D:\\ValleyoftheAncient-Git\\Unreal-Binary-Builder\\UnrealBinaryBuilderUpdater\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\heath\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "NetSparkleUpdater.UI.WPF": {
+              "target": "Package",
+              "version": "[2.0.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.411\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\ValleyoftheAncient-Git\\Unreal-Binary-Builder\\UnrealBinaryBuilder\\UnrealBinaryBuilder.csproj": {
+      "version": "3.1.6",
+      "restore": {
+        "projectUniqueName": "D:\\ValleyoftheAncient-Git\\Unreal-Binary-Builder\\UnrealBinaryBuilder\\UnrealBinaryBuilder.csproj",
+        "projectName": "Unreal Binary Builder",
+        "projectPath": "D:\\ValleyoftheAncient-Git\\Unreal-Binary-Builder\\UnrealBinaryBuilder\\UnrealBinaryBuilder.csproj",
+        "packagesPath": "C:\\Users\\heath\\.nuget\\packages\\",
+        "outputPath": "D:\\ValleyoftheAncient-Git\\Unreal-Binary-Builder\\UnrealBinaryBuilder\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\heath\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "D:\\ValleyoftheAncient-Git\\Unreal-Binary-Builder\\UnrealBinaryBuilderUpdater\\UnrealBinaryBuilderUpdater.csproj": {
+                "projectPath": "D:\\ValleyoftheAncient-Git\\Unreal-Binary-Builder\\UnrealBinaryBuilderUpdater\\UnrealBinaryBuilderUpdater.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "AvalonEdit": {
+              "target": "Package",
+              "version": "[6.1.3.50, )"
+            },
+            "CefSharp.Wpf.NETCore": {
+              "target": "Package",
+              "version": "[98.1.210, )"
+            },
+            "DotNetZip": {
+              "target": "Package",
+              "version": "[1.16.0, )"
+            },
+            "GameAnalytics.Net.Core.SDK": {
+              "target": "Package",
+              "version": "[3.3.5, )"
+            },
+            "HandyControl": {
+              "target": "Package",
+              "version": "[3.2.0, )"
+            },
+            "LibGit2Sharp": {
+              "target": "Package",
+              "version": "[0.27.0-preview-0175, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "Sentry": {
+              "target": "Package",
+              "version": "[3.14.1, )"
+            },
+            "SpicyTaco.AutoGrid": {
+              "target": "Package",
+              "version": "[1.2.29, )"
+            },
+            "chromiumembeddedframework.runtime.win-arm64": {
+              "target": "Package",
+              "version": "[98.1.21, )"
+            },
+            "chromiumembeddedframework.runtime.win-x64": {
+              "target": "Package",
+              "version": "[98.1.21, )"
+            },
+            "chromiumembeddedframework.runtime.win-x86": {
+              "target": "Package",
+              "version": "[98.1.21, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.411\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

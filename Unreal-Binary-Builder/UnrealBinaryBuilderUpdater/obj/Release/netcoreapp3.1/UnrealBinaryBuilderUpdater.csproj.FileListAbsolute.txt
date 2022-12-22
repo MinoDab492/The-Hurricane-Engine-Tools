@@ -1,0 +1,10 @@
+D:\ValleyoftheAncient-Git\Unreal-Binary-Builder\UnrealBinaryBuilderUpdater\bin\Release\netcoreapp3.1\UnrealBinaryBuilderUpdater.deps.json
+D:\ValleyoftheAncient-Git\Unreal-Binary-Builder\UnrealBinaryBuilderUpdater\bin\Release\netcoreapp3.1\UnrealBinaryBuilderUpdater.dll
+D:\ValleyoftheAncient-Git\Unreal-Binary-Builder\UnrealBinaryBuilderUpdater\bin\Release\netcoreapp3.1\UnrealBinaryBuilderUpdater.pdb
+D:\ValleyoftheAncient-Git\Unreal-Binary-Builder\UnrealBinaryBuilderUpdater\obj\Release\netcoreapp3.1\UnrealBinaryBuilderUpdater.csproj.AssemblyReference.cache
+D:\ValleyoftheAncient-Git\Unreal-Binary-Builder\UnrealBinaryBuilderUpdater\obj\Release\netcoreapp3.1\UnrealBinaryBuilderUpdater.GeneratedMSBuildEditorConfig.editorconfig
+D:\ValleyoftheAncient-Git\Unreal-Binary-Builder\UnrealBinaryBuilderUpdater\obj\Release\netcoreapp3.1\UnrealBinaryBuilderUpdater.AssemblyInfoInputs.cache
+D:\ValleyoftheAncient-Git\Unreal-Binary-Builder\UnrealBinaryBuilderUpdater\obj\Release\netcoreapp3.1\UnrealBinaryBuilderUpdater.AssemblyInfo.cs
+D:\ValleyoftheAncient-Git\Unreal-Binary-Builder\UnrealBinaryBuilderUpdater\obj\Release\netcoreapp3.1\UnrealBinaryBuilderUpdater.csproj.CoreCompileInputs.cache
+D:\ValleyoftheAncient-Git\Unreal-Binary-Builder\UnrealBinaryBuilderUpdater\obj\Release\netcoreapp3.1\UnrealBinaryBuilderUpdater.dll
+D:\ValleyoftheAncient-Git\Unreal-Binary-Builder\UnrealBinaryBuilderUpdater\obj\Release\netcoreapp3.1\UnrealBinaryBuilderUpdater.pdb

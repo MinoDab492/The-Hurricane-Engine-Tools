@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "dgSpecHash": "KLj+aksYmRThyL2ynHQ3vXCRT4YzKz15ZqXYV3JtBs3XwCPFuuWiF/JH2hmiZC5XjapQjb+2T3fDEGkoqbrOMw==",
+  "success": true,
+  "projectFilePath": "D:\\ValleyoftheAncient-Git\\Unreal-Binary-Builder\\UnrealBinaryBuilderUpdater\\UnrealBinaryBuilderUpdater.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\heath\\.nuget\\packages\\libsodium\\1.0.18\\libsodium.1.0.18.nupkg.sha512",
+    "C:\\Users\\heath\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
+    "C:\\Users\\heath\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",
+    "C:\\Users\\heath\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
+    "C:\\Users\\heath\\.nuget\\packages\\netsparkleupdater.sparkleupdater\\2.0.5\\netsparkleupdater.sparkleupdater.2.0.5.nupkg.sha512",
+    "C:\\Users\\heath\\.nuget\\packages\\netsparkleupdater.ui.wpf\\2.0.5\\netsparkleupdater.ui.wpf.2.0.5.nupkg.sha512",
+    "C:\\Users\\heath\\.nuget\\packages\\nsec.cryptography\\20.2.0\\nsec.cryptography.20.2.0.nupkg.sha512",
+    "C:\\Users\\heath\\.nuget\\packages\\portable.bouncycastle\\1.8.10\\portable.bouncycastle.1.8.10.nupkg.sha512",
+    "C:\\Users\\heath\\.nuget\\packages\\system.drawing.common\\4.7.1\\system.drawing.common.4.7.1.nupkg.sha512",
+    "C:\\Users\\heath\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512",
+    "C:\\Users\\heath\\.nuget\\packages\\system.security.accesscontrol\\5.0.0\\system.security.accesscontrol.5.0.0.nupkg.sha512",
+    "C:\\Users\\heath\\.nuget\\packages\\system.security.principal.windows\\5.0.0\\system.security.principal.windows.5.0.0.nupkg.sha512",
+    "C:\\Users\\heath\\.nuget\\packages\\system.text.encodings.web\\5.0.1\\system.text.encodings.web.5.0.1.nupkg.sha512",
+    "C:\\Users\\heath\\.nuget\\packages\\system.text.json\\5.0.2\\system.text.json.5.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}
