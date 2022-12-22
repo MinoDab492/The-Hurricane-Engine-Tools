@@ -1,0 +1,102 @@
+diff -x .git -ur usd.orig/cmake/defaults/Packages.cmake external_usd/cmake/defaults/Packages.cmake
+--- usd.orig/cmake/defaults/Packages.cmake	2019-10-24 22:39:53.000000000 +0200
++++ external_usd/cmake/defaults/Packages.cmake	2019-11-28 13:00:33.185957483 +0100
+@@ -64,7 +64,7 @@
+ endif()
+ 
+ # --TBB
+-find_package(TBB REQUIRED COMPONENTS tbb)
++find_package(TBB)
+ add_definitions(${TBB_DEFINITIONS})
+ 
+ # --math
+
+diff -Naur usd_orig/cmake/defaults/msvcdefaults.cmake external_usd/cmake/defaults/msvcdefaults.cmake
+--- usd_orig/cmake/defaults/msvcdefaults.cmake	2022-02-18 14:49:09 -0700
++++ external_usd/cmake/defaults/msvcdefaults.cmake	2022-03-14 11:41:50 -0600
+@@ -120,9 +120,6 @@
+ # for all translation units.
+ set(_PXR_CXX_FLAGS "${_PXR_CXX_FLAGS} /bigobj")
+ 
+-# Enable PDB generation.
+-set(_PXR_CXX_FLAGS "${_PXR_CXX_FLAGS} /Zi")
+-
+ # Enable multiprocessor builds.
+ set(_PXR_CXX_FLAGS "${_PXR_CXX_FLAGS} /MP")
+ set(_PXR_CXX_FLAGS "${_PXR_CXX_FLAGS} /Gm-")
+
+diff --git a/pxr/base/work/singularTask.h b/pxr/base/work/singularTask.h
+--- a/pxr/base/work/singularTask.h
++++ b/pxr/base/work/singularTask.h
+@@ -120,7 +120,7 @@
+                     // case we go again to ensure the task can do whatever it
+                     // was awakened to do.  Once we successfully take the count
+                     // to zero, we stop.
+-                    size_t old = count;
++                    std::size_t old = count;
+                     do { _fn(); } while (
+                         !count.compare_exchange_strong(old, 0));
+                 });
+
+diff --git a/pxr/usd/sdr/shaderMetadataHelpers.h b/pxr/usd/sdr/shaderMetadataHelpers.h
+--- a/pxr/usd/sdr/shaderMetadataHelpers.h
++++ b/pxr/usd/sdr/shaderMetadataHelpers.h
+@@ -32,6 +32,8 @@
+ #include "pxr/base/tf/token.h"
+ #include "pxr/usd/sdr/declare.h"
+ 
++#include <limits>
++
+ PXR_NAMESPACE_OPEN_SCOPE
+ 
+ /// \namespace ShaderMetadataHelpers
+
+diff --git a/pxr/base/arch/timing.h b/pxr/base/arch/timing.h
+index 517561f..fda5a1f 100644
+--- a/pxr/base/arch/timing.h
++++ b/pxr/base/arch/timing.h
+@@ -91,6 +91,10 @@ ArchGetTickTime()
+ inline uint64_t
+ ArchGetStartTickTime()
+ {
++    // BLENDER: avoid using rdtsc instruction that is not supported on older CPUs.
++    return ArchGetTickTime();
++
++#if 0
+     uint64_t t;
+ #if defined (ARCH_OS_DARWIN)
+     return ArchGetTickTime();
+@@ -123,6 +127,7 @@ ArchGetStartTickTime()
+ #error "Unsupported architecture."
+ #endif
+   return t;
++#endif
+ }
+ 
+ /// Get a "stop" tick time for measuring an interval of time.  See
+@@ -132,6 +137,10 @@ ArchGetStartTickTime()
+ inline uint64_t
+ ArchGetStopTickTime()
+ {
++    // BLENDER: avoid using rdtsc instruction that is not supported on older CPUs.
++    return ArchGetTickTime();
++
++#if 0
+     uint64_t t;
+ #if defined (ARCH_OS_DARWIN)
+     return ArchGetTickTime();
+@@ -162,11 +171,11 @@ ArchGetStopTickTime()
+ #error "Unsupported architecture."
+ #endif
+   return t;
++#endif
+ }
+ 
+-#if defined (doxygen) ||                                                       \
+-    (!defined(ARCH_OS_DARWIN) && defined(ARCH_CPU_INTEL) &&                    \
+-     (defined(ARCH_COMPILER_CLANG) || defined(ARCH_COMPILER_GCC)))
++// BLENDER: avoid using rdtsc instruction that is not supported on older CPUs.
++#if 0
+ 
+ /// A simple timer class for measuring an interval of time using the
+ /// ArchTickTimer facilities.

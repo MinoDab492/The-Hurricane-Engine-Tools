@@ -1,0 +1,92 @@
+.topBar {
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 24px;
+    width: 100%;
+    background: $color-mid-grey;
+    -webkit-app-region: drag;
+    color: white;
+    font-size: 0.9em;
+
+    .label {
+        line-height: 24px;
+        position: absolute;
+        transform: translateX(-50%);
+    }
+
+    .button-container {
+        float: left;
+        padding: 0 10px;
+        height: 24px;
+
+        &__win {
+            float: right;
+            padding: 0px;
+        }
+
+        .button {
+            display: flex;
+            float: left;
+            align-items: center;
+            justify-content: center;
+            -webkit-app-region: no-drag;
+            width: 14px;
+            height: 14px;
+            border-radius: 7px;
+            margin: 5px 2px;
+            
+            &__win {
+                float: right;
+                width: 34px;
+                height: 24px;
+                border-radius: 0px;
+                margin: 0px;
+            }
+        }
+
+        .button-icon {
+            display: flex;
+        }
+
+        .button-close {
+            background: #FF645B;
+            fill: #FF645B;
+
+            &:hover {
+                fill: #BF341B;
+            }
+        }
+
+        .button-close__win {
+            background: none;
+            fill: #FFF;
+
+            &:hover {
+                background: #E81123;
+                fill: #FFF;
+            }
+        }
+
+        .button-minimize {
+            background: #FFC430;
+            fill: #FFC430;
+
+            &:hover {
+                fill: #BF9400
+            }
+        }
+
+        .button-minimize__win {
+            background: none;
+            fill: #FFF;
+
+            &:hover {
+                background: $color-dark-grey;
+                fill: #FFF;
+            }
+        }
+
+    }
+}
