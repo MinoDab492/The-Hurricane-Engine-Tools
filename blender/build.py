@@ -14,7 +14,7 @@ if sys.platform.startswith('linux'):
     'git','subversion','cmake','libx11-dev','libxxf86vm-dev','libxcursor-dev',
     'libxi-dev','libxrandr-dev','libxinerama-dev','libglew-dev'])
 
-SVN_DIR= blender/
+SVN_DIR= "blender/"
 platform_dir = {
     'win32' : 'win64_vc15',
     'darwin' : 'darwin',
