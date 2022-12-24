@@ -4,6 +4,10 @@ name: Compile Blender
 # Controls when the action will run. Triggers the workflow on push or pull request
 on: workflow_dispatch
 
+#GitHub doesn't allow one of the commands required without setting this to true apparently
+env:
+  ACTIONS_ALLOW_UNSECURE_COMMANDS: true
+
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
