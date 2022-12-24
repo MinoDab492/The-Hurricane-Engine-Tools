@@ -1,6 +1,5 @@
 To-Do:
 	Create GitHub Actions scripts (ensures everything compiles correctly, before people download it) - In Progress
-		Create GitHub Actions script for Unreal Binary Builder - In Progress
 		Create GitHub Actions script for razer-paint - Waiting
 		Create GitHub Actions script for Krita - Waiting
-		Create GitHub Actions script for Blender - Waiting
+		Create GitHub Actions script for Blender - In Progress
