@@ -1,0 +1,27 @@
+- name: Kl13nt Electron Forge Action
+  # You may pin to the exact commit or the version.
+  # uses: KL13NT/action-electron-forge@9bfbcca982262719fac6efcac3bc5b9aac2ea589
+  uses: KL13NT/action-electron-forge@0.0.1
+  with:
+    # GitHub authentication token
+    github_token: 
+    # Base64-encoded code signing certificate for macOS
+    mac_certs: # optional
+    # Password for decrypting `mac_certs`
+    mac_certs_password: # optional
+    # Whether the app should be released after a successful build
+    release: # optional
+    # Base64-encoded code signing certificate for Windows
+    windows_certs: # optional
+    # Password for decrypting `windows_certs`
+    windows_certs_password: # optional
+    # Directory where NPM/Yarn commands should be run
+    package_root: # optional, default is .
+    # Name of the optional NPM build script which is executed before `electron-builder`
+    build_script_name: # optional, default is build
+    # Whether the action should execute the NPM build script before running `electron-builder`
+    skip_build: # optional
+    # Whether to run `electron-builder` using the Vue CLI plugin instead of calling the command directly
+    use_vue_cli: # optional
+    # Directory where `electron-builder` commands should be run
+    app_root: # optional
