@@ -1,0 +1,22 @@
+on: workflow_dispatch
+
+jobs:
+  compile:
+    name: Compile Blender on Ubuntu-18.04
+    runs-on: ubuntu-18.04
+  
+    steps:
+    - name: Compile Blender
+      run: |
+        sudo apt update
+        sudo apt install build-essential git subversion cmake libx11-dev libxxf86vm-dev libxcursor-dev libxi-dev libxrandr-dev libxinerama-dev libegl-dev
+        sudo apt install libwayland-dev wayland-protocols libxkbcommon-dev libdbus-1-dev linux-libc-dev
+        mkdir ~/blender-git
+        cd ~/blender-git
+        git clone https://git.blender.org/blender.git
+        mkdir ~/blender-git/lib
+        cd ~/blender-git/lib
+        svn checkout https://svn.blender.org/svnroot/bf-blender/trunk/lib/linux_x86_64_glibc_228
+        cd ~/blender-git/blender
+        make update
+        make
