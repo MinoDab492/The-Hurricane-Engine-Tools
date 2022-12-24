@@ -1,4 +1,4 @@
-name: MSBuild
+name: Compile Unreal Binary Builder
 
 on: workflow_dispatch
 
