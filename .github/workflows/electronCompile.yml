@@ -1,27 +1,31 @@
-name: Electron Builder Action
+name: Build/release
 
-on:  workflow_dispatch
+on: workflow_dispatch
 
 jobs:
-  build:
+  release:
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        os: [macos-latest, ubuntu-latest, windows-latest]
+
     steps:
-      # You may pin to the exact commit or the version.
-      # uses: samuelmeuli/action-electron-builder@92327c67bc45ff7c38bf55d8aa8c4d75b7ea38e7
-        uses: samuelmeuli/action-electron-builder@v1.6.0
+      - name: Check out Git repository
+        uses: actions/checkout@v1
+
+      - name: Install Node.js, NPM and Yarn
+        uses: actions/setup-node@v1
         with:
-          # GitHub authentication token
-          github_token: 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
-          # Whether the app should be released after a successful build
-          release: false # optional
-          # Directory where NPM/Yarn commands should be run
-          package_root: razer-paint # optional, default is .
-          # Name of the optional NPM build script which is executed before `electron-builder`
-          build_script_name: build # optional, default is build
-          # Whether the action should execute the NPM build script before running `electron-builder`
-          skip_build: false # optional
-          # Whether to run `electron-builder` using the Vue CLI plugin instead of calling the command directly
-          use_vue_cli: false # optional 
-          # Maximum number of attempts for completing the build and release step
-          max_attempts: 1 # optional, default is 1
-          # Directory where `electron-builder` commands should be run
-          app_root: razer-paint # optional
+          node-version: 10
+
+      - name: Build/release Electron app
+        uses: samuelmeuli/action-electron-builder@v1
+        with:
+          # GitHub token, automatically provided to the action
+          # (No need to define this secret in the repo settings)
+          github_token: ${{ secrets.github_token }}
+
+          # If the commit is tagged with a version (e.g. "v1.0.0"),
+          # release the app after building
+          release: ${{ startsWith(github.ref, 'refs/tags/v') }}
