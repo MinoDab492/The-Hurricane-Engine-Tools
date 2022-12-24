@@ -40,9 +40,9 @@ if path.exists(BUILD_DIR) == False:
 print("Configure Blender project")
 if sys.platform == 'win32':
     #Specify 64 bits architecture on Windows
-    subprocess.check_call(['cmake','-A','x64','-S','blender/','-B',BUILD_DIR])
+    subprocess.check_call(['cmake','-A','x64','-S','.','-B',BUILD_DIR])
 else:
-    subprocess.check_call(['cmake','-S','blender/','-B',BUILD_DIR])
+    subprocess.check_call(['cmake','-S','.','-B',BUILD_DIR])
 
 print("Build Blender project")
 subprocess.check_call(['cmake','--build',BUILD_DIR,'--target','install','--config','Release'])
