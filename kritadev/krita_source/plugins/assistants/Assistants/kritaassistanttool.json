@@ -1,9 +1,0 @@
-{
-    "Id": "AssistantTool",
-    "Type": "Service",
-    "X-KDE-Library": "kritaassistanttool",
-    "X-KDE-ServiceTypes": [
-        "Krita/Tool"
-    ],
-    "X-Krita-Version": "28"
-}

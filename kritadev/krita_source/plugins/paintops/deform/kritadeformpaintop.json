@@ -1,9 +1,0 @@
-{
-    "Id": "Deform brush",
-    "Type": "Service",
-    "X-KDE-Library": "kritadeformpaintop",
-    "X-KDE-ServiceTypes": [
-        "Krita/Paintop"
-    ],
-    "X-Krita-Version": "28"
-}

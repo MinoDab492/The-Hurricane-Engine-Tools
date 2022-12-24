@@ -1,9 +1,0 @@
-{
-    "Id": "Enhancement Filters",
-    "Type": "Service",
-    "X-KDE-Library": "kritaimageenhancement",
-    "X-KDE-ServiceTypes": [
-        "Krita/Filter"
-    ],
-    "X-Krita-Version": "28"
-}

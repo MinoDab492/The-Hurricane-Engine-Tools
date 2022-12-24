@@ -1,9 +1,0 @@
-{
-    "Id": "Shear Image Plugin",
-    "Type": "Service",
-    "X-KDE-Library": "kritashearimage",
-    "X-KDE-ServiceTypes": [
-        "Krita/ViewPlugin"
-    ],
-    "X-Krita-Version": "28"
-}

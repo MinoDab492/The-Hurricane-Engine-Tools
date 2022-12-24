@@ -1,9 +1,0 @@
-{
-    "Id": "Polygon Tool",
-    "Type": "Service",
-    "X-KDE-Library": "kritatoolpolygon",
-    "X-KDE-ServiceTypes": [
-        "Krita/Tool"
-    ],
-    "X-Krita-Version": "28"
-}

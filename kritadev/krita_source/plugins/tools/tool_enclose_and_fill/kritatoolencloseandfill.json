@@ -1,9 +1,0 @@
-{
-    "Id": "Enclose and Fill Tool",
-    "Type": "Service",
-    "X-KDE-Library": "kritatoolencloseandfill",
-    "X-KDE-ServiceTypes": [
-        "Krita/Tool"
-    ],
-    "X-Krita-Version": "28"
-}

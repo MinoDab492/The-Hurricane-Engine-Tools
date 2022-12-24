@@ -1,9 +1,0 @@
-{
-    "Id": "Buginfo Plugin",
-    "Type": "Service",
-    "X-KDE-Library": "kritabuginfo",
-    "X-KDE-ServiceTypes": [
-        "Krita/ViewPlugin"
-    ],
-    "X-Krita-Version": "28"
-}

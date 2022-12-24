@@ -1,9 +1,0 @@
-{
-    "Id": "Solid Pattern Layer",
-    "Type": "Service",
-    "X-KDE-Library": "kritapatterngenerator",
-    "X-KDE-ServiceTypes": [
-        "Krita/Generator"
-    ],
-    "X-Krita-Version": "28"
-}
